@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+requests
+python-dotenv
+concurrent_log_handler
+pytest
+httpx

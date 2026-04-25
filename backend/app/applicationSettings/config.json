@@ -1,0 +1,4 @@
+{
+    "apiBaseUrl": "http://127.0.0.1:8000",
+    "aiModel": "qwen3:8b"
+}
