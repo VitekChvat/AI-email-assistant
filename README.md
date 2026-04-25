@@ -75,7 +75,7 @@ AI Email Agent is a project that automatically generates replies to emails using
 
 
 ## ▶️ Running the Project<br>
-**Start the application with (run in project root folder in powershell):**<br>
+**Wait until the setup complete.<br>Then Start the application with (run in project root folder in powershell):**<br>
 `powershell -ExecutionPolicy Bypass -File .\start.ps1`
 
 **Then open in your browser:**<br>
@@ -91,14 +91,13 @@ http://localhost:5173/
 - AI-powered email response generation
 - Local LLM processing (Ollama, no external API required)
 - Fast frontend-backend communication
-- JavaScript logging system connected to backend
 - Asynchronous request handling
 - Fully local and private AI execution
 
 
 ## ⚙️ Configuration<br>
 **Backend configuration includes:**
-- API base URL
+- API backend URL
 - model selection
 
 **Frontend loads backend configuration from:**<br>
@@ -115,11 +114,11 @@ http://localhost:8000/config/configJson
 
 
 ## 🧠 How It Works (High-Level)
-- The user writes an email in the frontend interface
-- The frontend sends the request to the backend API
-- The backend forwards the prompt to the Ollama LLM
-- The model generates a response
-- The backend returns the AI-generated reply to the frontend
+1. The user writes an email in the frontend interface
+2. The frontend sends the request to the backend API
+3. The backend forwards the prompt to the Ollama LLM
+4. The model generates a response
+5. The backend returns the AI-generated reply to the frontend
 
 
 ## 📌 Technologies Used
@@ -159,22 +158,23 @@ Contact: vitekchvat.dev@gmail.com
 
 
 ## 💡 Motivation
-This project was created to explore:
+**This project was created to explore:**
 - automation of communication using AI
   local LLM execution without cloud APIs
 - building AI agent architectures
 - combining backend + frontend in a full-stack AI system
-- learning APIs and how to navigate a larger project than I usually work on 
+- learning APIs and how to navigate a larger project than I usually work on
+- learning basic testing in python with pytest
 
 
 ## ⚠️ Known Issues
 - high RAM usage due to local LLM
 - first response may be slow (model loading)
-- .ps1 scripts may be blocked by your antivirus and might not work properly
+- `.ps1` scripts may be blocked by your antivirus and might not work properly
 - your Vite server may run on a different port than the default one (http://localhost:5173/)
 - If the setup, start, or stop scripts are not working, you may not be running them from the root folder
 - Always use the same folder that you extracted
 
 ## ⚠️ Warning
-- Do not worry if some folders are missing (for example "frontend" folder). They will be added during setup and startup.
+- Do not worry if some folders are missing (for example "frontend" and "PowerShellPIDs" folders). They will be added during setup and start.
 - The PowerShell PIDs folder is cleared automatically after each stop process.
