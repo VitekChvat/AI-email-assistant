@@ -12,6 +12,10 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 Set-Location "$root\backend"
 pip install -r requirements.txt
 
+# Adding folders that the project needs
+New-Item -ItemType Directory -Path "PowerShellPIDs"
+New-Item -ItemType Directory -Path "frontend"
+
 # Frontend Setup
 Set-Location "$root\frontend"
 @("No", "No") | npm create vite@8.3.0 . -- --template vanilla
