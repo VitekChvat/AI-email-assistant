@@ -8,9 +8,6 @@ __pycache__/
 env/
 ENV/
 
-# PowerShell PIDs
-PowerShellPIDs/
-
 # Node.js (pokud se frontend vytváří)
 node_modules/
 npm-debug.log*
