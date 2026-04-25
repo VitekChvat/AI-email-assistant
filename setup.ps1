@@ -13,6 +13,7 @@ Set-Location "$root\backend"
 pip install -r requirements.txt
 
 # Adding folders that the project needs
+Set-Location "$root"
 New-Item -ItemType Directory -Path "PowerShellPIDs"
 New-Item -ItemType Directory -Path "frontend"
 

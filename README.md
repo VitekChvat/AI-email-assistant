@@ -23,6 +23,7 @@ AI Email Agent is a project that automatically generates replies to emails using
 
 
 ## 🚀 Quick Start<br>
+**First, download the ZIP folder of this project and then extract it.**<br>
 ## ⚙️ Requirements
 ### To run this project, you need:
 - Python 3.12.x (recommended 3.12.10)
@@ -171,6 +172,8 @@ This project was created to explore:
 - first response may be slow (model loading)
 - .ps1 scripts may be blocked by your antivirus and might not work properly
 - your Vite server may run on a different port than the default one (http://localhost:5173/)
+- If the setup, start, or stop scripts are not working, you may not be running them from the root folder
+- Always use the same folder that you extracted
 
 ## ⚠️ Warning
 - Do not worry if some folders are missing (for example "frontend" folder). They will be added during setup and startup.
