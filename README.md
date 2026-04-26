@@ -35,7 +35,7 @@ AI Email Agent is a project that automatically generates replies to emails using
 - Windows 11 (I did not test the project on difrent OS or other versions of Windows)
 
 ### This project was tested on:
-- Python 3.12
+- Python 3.12.10
 - Node.js 25.0.0
 - npm 11.6.2
 - Ollama 0.17.1 and 0.21.1
@@ -52,8 +52,8 @@ AI Email Agent is a project that automatically generates replies to emails using
 
 ### Node.js (npm included): 
 1. https://nodejs.org/en/download/archive/v25.0.0
-2. Download node-v25.0.0-arm64.msi
-3. Start the installer and install node.js + npm
+2. Download node-v25.0.0-arm64.msi or node-v25.0.0-x64.msi (It depends on what procesor do you have. If one of them does not wokr, just select the other one)
+3. Start the installer and install node.js + npm (make sure to select “Add to PATH”)
 4. Check if the Node.js is installed correctly with `node -v` in cmd
 4. Check if the npm is installed correctly with `npm -v` in cmd<br>
 
@@ -63,8 +63,10 @@ AI Email Agent is a project that automatically generates replies to emails using
 3. Start the installer and install Ollama
 4. Check if the Ollama is installed correctly with `ollama -v` in cmd<br>
 
-**Then run the automated setup script (run this onle once, run in project root folder in powershell):**<br>
-`powershell -ExecutionPolicy Bypass -File .\setup.ps1`
+**Then run the automated setup script (run this only once and please be patient because it can take a while, run in project root folder in powershell):**<br>
+`powershell -ExecutionPolicy Bypass -File .\setup.ps1`<br>
+
+**(You can go to the root folder with `cd` command, for example: `cd downloads/AI-email-assistant-main/AI-email-assistant-main`)**<br>
 
 ### This script will:
 - Install the required LLM model (Qwen via Ollama)
@@ -100,7 +102,7 @@ http://localhost:5173/
 - API backend URL
 - model selection
 
-**Frontend loads backend configuration from:**<br>
+**Frontend loads backend configuration from(you can see it in browser only if the project is running):**<br>
 http://localhost:8000/config/configJson
 
 
@@ -178,3 +180,5 @@ Contact: vitekchvat.dev@gmail.com
 ## ⚠️ Warning
 - Do not worry if some folders are missing (for example "frontend" and "PowerShellPIDs" folders). They will be added during setup and start.
 - The PowerShell PIDs folder is cleared automatically after each stop process.
+- Testing can take a few minutes
+- If you run the project multiple times in a row without stopping it, the stop script may not work properly.
